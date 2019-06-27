@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>longwhile</title>
+</head>
+<body>
+<script>
+    let i =1;
+    let j=1;
+    let bang;
+    bang = "<table border='2' width='50' cellspacing='5' cellpadding='5'>"
+    while(i<=10){
+        bang = bang +"<tr>";
+        while(j<=10){
+            bang = bang + "<td>"+ i*j +"</td>"; j++
+        }bang=bang + "</tr>"; j=1;i++;
+    }
+    bang = bang + "</table>";
+    document.write(bang);
+
+</script>
+</body>
+</html>
